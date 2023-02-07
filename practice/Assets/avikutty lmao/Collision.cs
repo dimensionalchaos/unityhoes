@@ -8,4 +8,11 @@ public class Collision : MonoBehaviour {
 
         Debug.Log("boi you dented the car!");
    }
+
+   void OnTriggerExit2D(Collider2D other) {
+      
+      if (other.tag == "Package") {
+         Debug.Log("You picked up the SAUCE!!!");
+      }
+   }
 }
