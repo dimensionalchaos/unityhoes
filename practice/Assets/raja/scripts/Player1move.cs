@@ -8,7 +8,7 @@ public class Player1move : MonoBehaviour
 [SerializeField]
 private float dirx;
 private float speed = 10f;
-private float jumpforce = 5f;
+private float jumpforce = 8f;
 private bool onground = true;
 private Rigidbody2D mybody;
 private SpriteRenderer sr;
