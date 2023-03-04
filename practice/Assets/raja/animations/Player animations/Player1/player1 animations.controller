@@ -33,7 +33,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: player walk
-  m_Speed: 0.8
+  m_Speed: 0.5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -5191292326240786487}
@@ -46,7 +46,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 69cd958cbc27be248aa845c2280c4042, type: 2}
+  m_Motion: {fileID: 7400000, guid: b0bc19f7857e0da4d8b5a097a4ab90ab, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -117,8 +117,8 @@ AnimatorController:
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_DefaultBool: 1
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
