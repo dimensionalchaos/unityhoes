@@ -21,8 +21,19 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 2111864683, guid: bfe6b90a11e30c849a3848767ac0ea12, type: 3}
+<<<<<<< Updated upstream
     - time: 0.041666668
       value: {fileID: -722732219, guid: bfe6b90a11e30c849a3848767ac0ea12, type: 3}
+=======
+    - time: 0.016666668
+      value: {fileID: 2111864683, guid: bfe6b90a11e30c849a3848767ac0ea12, type: 3}
+    - time: 0.033333335
+      value: {fileID: -722732219, guid: bfe6b90a11e30c849a3848767ac0ea12, type: 3}
+    - time: 0.05
+      value: {fileID: 957183138, guid: bfe6b90a11e30c849a3848767ac0ea12, type: 3}
+    - time: 0.06666667
+      value: {fileID: 2021404306, guid: bfe6b90a11e30c849a3848767ac0ea12, type: 3}
+>>>>>>> Stashed changes
     - time: 0.083333336
       value: {fileID: -1324155440, guid: bfe6b90a11e30c849a3848767ac0ea12, type: 3}
     - time: 0.125
@@ -53,8 +64,8 @@ AnimationClip:
       isPPtrCurve: 1
     pptrCurveMapping:
     - {fileID: 2111864683, guid: bfe6b90a11e30c849a3848767ac0ea12, type: 3}
+    - {fileID: 2111864683, guid: bfe6b90a11e30c849a3848767ac0ea12, type: 3}
     - {fileID: -722732219, guid: bfe6b90a11e30c849a3848767ac0ea12, type: 3}
-    - {fileID: -1324155440, guid: bfe6b90a11e30c849a3848767ac0ea12, type: 3}
     - {fileID: 957183138, guid: bfe6b90a11e30c849a3848767ac0ea12, type: 3}
     - {fileID: 2021404306, guid: bfe6b90a11e30c849a3848767ac0ea12, type: 3}
     - {fileID: 195740695, guid: bfe6b90a11e30c849a3848767ac0ea12, type: 3}
@@ -83,4 +94,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.016666668
+    functionName: 
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
