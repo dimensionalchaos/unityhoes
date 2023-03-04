@@ -6,7 +6,7 @@ TagManager:
   tags:
   - Package
   - Delivery
-  - SPEED
+  - ground
   layers:
   - Default
   - TransparentFX
