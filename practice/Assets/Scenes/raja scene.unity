@@ -4800,6 +4800,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cfa94b8b26427a45802a7a78105e9bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bruh: {fileID: 0}
   count: 0
   zdirx: 1
   speed: 2

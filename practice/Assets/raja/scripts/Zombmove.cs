@@ -10,9 +10,12 @@ public class Zombmove : MonoBehaviour
     public float zdirx = 1;
     public float speed = 2f;
     public float temp = 0;
+    public GameObject player;
+    Player1move obj = new Player1move();
     void Awake()
     {
-        bruh = GetComponent<SpriteRenderer>();
+        
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Start is called before the first frame update
@@ -24,9 +27,10 @@ public class Zombmove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        movemf();
+        if(obj.poz.position.x-transform.position.x<=4&&transform.LookAt(player))
+        movemfplayeristhere();
     }
-    void movemf()
+    void movemfplayernotthere()
     {
         temp+= speed*Time.deltaTime;
         
@@ -43,5 +47,9 @@ public class Zombmove : MonoBehaviour
             bruh.flipX = false;
         }
         transform.position= transform.position + new Vector3(speed*zdirx,0f,0f)*Time.deltaTime;
+    }
+    void movemfplayeristhere()
+    {
+      
     }
 }

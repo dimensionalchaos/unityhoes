@@ -5,6 +5,12 @@ using UnityEngine;
 
 public class Player1move : MonoBehaviour
 {
+    public Transform poz;
+    public Player1move()
+    {
+         poz = GetComponent<Transform>();
+    }
+    
 [SerializeField]
 private float dirx;
 private float speed = 10f;
@@ -14,14 +20,16 @@ private Rigidbody2D mybody;
 private SpriteRenderer sr;
 private Animator anim;
 
-private void Awake() {
+
+public void Awake() {
+
  mybody=GetComponent<Rigidbody2D>();
  anim = GetComponent<Animator>();
  sr = GetComponent<SpriteRenderer>();
-
-
-    
+ 
 }
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +41,7 @@ private void Awake() {
     {
        
         PlayerMovement();
-         PlayerAnimation();
+        PlayerAnimation();
          
     }
     void FixedUpdate()
@@ -43,6 +51,14 @@ private void Awake() {
     void PlayerMovement()
     {
         dirx = Input.GetAxisRaw("Horizontal");
+        if(dirx == -1)
+        {
+            sr.flipX=true;
+        }
+        else if(dirx == 1)
+        {
+            sr.flipX=false;
+        }
         transform.position+= new Vector3(dirx,0,0)*speed* Time.deltaTime;
         
     }
